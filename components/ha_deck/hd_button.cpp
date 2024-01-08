@@ -50,8 +50,8 @@ void HdButton::render_() {
     lv_obj_add_event_cb(button_, HdButton::on_long_press_, LV_EVENT_LONG_PRESSED, this);
     lv_obj_add_event_cb(button_, HdButton::on_released_, LV_EVENT_RELEASED, this);
 
-    lv_obj_set_height(button_, h_ > 0 ? h_ : 150);
-    lv_obj_set_width(button_, w_ > 0 ? w_ : 150);
+    lv_obj_set_height(button_, h_ > 0 ? h_ : 96);
+    lv_obj_set_width(button_, w_ > 0 ? w_ : 110);
     lv_obj_align(button_, LV_ALIGN_TOP_LEFT, x_, y_);
     lv_obj_add_flag(button_, LV_OBJ_FLAG_SCROLL_ON_FOCUS);
     lv_obj_clear_flag(button_, LV_OBJ_FLAG_SCROLLABLE);
