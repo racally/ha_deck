@@ -84,7 +84,7 @@ void HdButton::render_() {
         icon = lv_label_create(button_);
         lv_obj_set_width(icon, 48);
         lv_obj_set_height(icon, 48);
-        lv_obj_set_style_bg_color(icon, lv_color_hex(#0b5394), LV_PART_MAIN | LV_STATE_DISABLED);
+        lv_obj_set_style_bg_color(icon, lv_color_hex(#0xff0000), LV_PART_MAIN | LV_STATE_DISABLED);
         lv_obj_set_align(icon, has_text ? LV_ALIGN_TOP_MID : LV_ALIGN_CENTER);
         lv_label_set_text(icon, icon_.c_str());
         lv_obj_set_style_text_align(icon, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
